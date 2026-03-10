@@ -4,141 +4,184 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EK Effektiv Kundeservice</title>
-<style>
-body {font-family: Arial, sans-serif; margin:0; background:#f4f6f8;}
-header {background: url('https://images.unsplash.com/photo-1580894908361-1967e340ca2a?fit=crop&w=1500&q=80') no-repeat center center/cover; color:white; text-align:center; padding:120px 20px; position: relative;}
-header::after {content:''; position:absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5);}
-header h1, header p, header button { position: relative; z-index:1; }
-header h1 { font-size:44px; margin-bottom:15px; }
-header p { font-size:20px; margin-bottom:25px; max-width:700px; margin-left:auto; margin-right:auto; }
-button { background:#ff9900; color:white; border:none; padding:14px 24px; border-radius:8px; cursor:pointer; margin:5px; font-size:16px; }
-nav { background:#082c6c; padding:12px; text-align:center; }
-nav a { color:white; text-decoration:none; margin:0 12px; font-weight:bold; font-size:16px; }
-section { max-width:1000px; margin:auto; padding:50px 20px; }
-.box { background:white; padding:30px; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); margin-bottom:25px; line-height:1.7; }
-.trustpilot { text-align:center; margin-top:40px; margin-bottom:25px; font-size:22px; color:#ffcc00; }
-footer { background:#0b3d91; color:white; text-align:center; padding:20px; font-size:16px; }
-ul { padding-left:20px; }
-input, textarea { width:100%; padding:10px; margin-bottom:10px; border-radius:6px; border:1px solid #ccc; }
-</style>
-</head>
-<body>
-
-<header class="hero">
-  <div class="hero-text">
-    <h1>EK Effektiv Kundeservice</h1>
-    <p>Vi hjælper medarbejdere i mad- og servicebranchen med at sikre korrekt løn og feriepenge.</p>
-
-    <a href="medlem.html" class="btn">Bliv medlem</a>
-    <a href="hjaelp.html" class="btn">Få hjælp</a>
-    <a href="send-loenseddel.html" class="btn">Send lønseddel</a>
-  </div>
-</header>
 
 <style>
+
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#f4f6f8;
+}
 
 .hero{
-  height:420px;
-  background-image:url("https://images.unsplash.com/photo-1556911220-e15b29be8c8f");
-  background-size:cover;
-  background-position:center;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  position:relative;
+height:420px;
+background-image:url("https://images.unsplash.com/photo-1556911220-e15b29be8c8f");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
 }
 
 .hero::before{
-  content:"";
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  backdrop-filter:blur(3px);
-  background:rgba(0,0,0,0.3);
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+backdrop-filter:blur(3px);
+background:rgba(0,0,0,0.35);
 }
 
 .hero-text{
-  position:relative;
-  color:white;
-  text-align:center;
-  max-width:700px;
+position:relative;
+text-align:center;
+color:white;
 }
 
 .hero-text h1{
-  font-size:40px;
-  margin-bottom:10px;
+font-size:42px;
+margin-bottom:10px;
 }
 
 .hero-text p{
-  font-size:18px;
-  margin-bottom:25px;
+font-size:18px;
+margin-bottom:25px;
 }
 
 .btn{
-  display:inline-block;
-  background:#ff9900;
-  color:white;
-  padding:12px 22px;
-  margin:5px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:bold;
+display:inline-block;
+background:#ff9900;
+color:white;
+padding:12px 22px;
+margin:6px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
+
+.box{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+margin-bottom:20px;
+}
+
+h2{
+color:#0b3d91;
+}
+
+footer{
+background:#0b3d91;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+.stars{
+color:#00b67a;
+font-size:24px;
+margin-top:10px;
 }
 
 </style>
+</head>
 
-<nav>
-<a href="#om">Om EK</a>
-<a href="#start">Hvorfor vi startede</a>
-<a href="#service">Vores service</a>
-<a href="#kontakt">Kontakt</a>
-</nav>
+<body>
 
-<section id="om" class="box">
-<h2>Om EK</h2>
-<p>EK står for Effektiv Kundeservice og hjælper medarbejdere med at sikre deres rettigheder og korrekt løn. Vi samler mennesker omkring stærke værdier og giver medlemmerne tryghed og støtte.</p>
-<ul>
-<li>Samler mennesker omkring stærke værdier</li>
-<li>Giver medlemmerne en stemme og en plads</li>
-<li>Skaber tryghed og stabilitet på tværs af generationer</li>
-<li>Udvikler sig i takt med tiden uden at miste sine rødder</li>
-<li>Bliver et naturligt valg for dem der søger fællesskab frem for konkurrence</li>
-</ul>
-</section>
+<header class="hero">
 
-<section id="start" class="box">
-<h2>Hvorfor vi startede</h2>
-<p>Vi startede EK for at hjælpe folk i mad- og servicebranchen, som ofte har travlt og skiftende arbejdstider, med hurtig og enkel adgang til rådgivning om løn og feriedage.</p>
-<p>Vores mål er at skabe en moderne, enkel og effektiv fagforening, hvor ingen går glip af det, de har krav på.</p>
-</section>
+<div class="hero-text">
 
-<section id="service" class="box">
-<h2>Vores service</h2>
-<p>Vi tilbyder:</p>
-<ul>
-<li>Hjælp til at forstå lønsedler</li>
-<li>Tjek for fejl i løn, feriepenge eller sygedage</li>
-<li>Forklaring af alle punkter og fradrag</li>
-<li>Personlig rådgivning om rettigheder</li>
-<li>Support via mail og telefon</li>
-</ul>
-</section>
+<h1>EK Effektiv Kundeservice</h1>
 
-<section id="kontakt" class="box">
-<h2>Kontakt os</h2>
-<p>Email: ekdk5823@gmail.com</p>
-<p>Telefon: 27 32 43 54</p>
-<p>Hjemmeside: <a href="https://github.io/Ek-hjemmeside" target="_blank">github.io/Ek-hjemmeside</a></p>
-</section>
+<p>Vi hjælper medarbejdere i mad- og servicebranchen med at sikre korrekt løn, feriepenge og feriedage.</p>
 
-<div class="trustpilot">
-★ ★ ★ ★ ☆ &nbsp; 4 ud af 5 stjerner
+<a href="medlem.html" class="btn">Bliv medlem</a>
+<a href="hjaelp.html" class="btn">Få hjælp</a>
+<a href="send-loenseddel.html" class="btn">Send lønseddel</a>
+
 </div>
 
+</header>
+
+
+<section>
+
+<div class="box">
+
+<h2>Om EK</h2>
+
+<p>
+EK står for Effektiv Kundeservice. Vi hjælper medarbejdere med at forstå deres lønsedler og sikre,
+at de får den løn og de rettigheder de har krav på.
+</p>
+
+<ul>
+
+<li>Samler mennesker omkring stærke værdier</li>
+<li>Giver medlemmerne en stemme og en plads</li>
+<li>Skaber tryghed og stabilitet</li>
+<li>Udvikler sig i takt med tiden</li>
+<li>Et fællesskab frem for konkurrence</li>
+
+</ul>
+
+</div>
+
+
+<div class="box">
+
+<h2>Vores service</h2>
+
+<p>
+Vi hjælper folk som tror de mangler penge fra deres arbejde eller ikke har fået de feriedage de har ret til.
+</p>
+
+<ul>
+
+<li>Gennemgang af lønsedler</li>
+<li>Tjek af feriepenge</li>
+<li>Tjek af feriedage</li>
+<li>Hjælp hvis du er blevet snydt for løn</li>
+<li>Forklaring af lønsedler</li>
+
+</ul>
+
+</div>
+
+
+<div class="box">
+
+<h2>Kontakt</h2>
+
+<p>Email: ekdk5823@gmail.com</p>
+<p>Telefon: 27 32 43 54</p>
+<p>Hjemmeside: github.io/Ek-hjemmeside</p>
+
+</div>
+
+</section>
+
+
 <footer>
+
 <p>© 2026 EK Effektiv Kundeservice</p>
+
+<div class="stars">
+★★★★☆
+</div>
+
+<p>Trustpilot rating</p>
+
 </footer>
 
 </body>
