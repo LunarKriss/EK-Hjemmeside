@@ -24,13 +24,70 @@ input, textarea { width:100%; padding:10px; margin-bottom:10px; border-radius:6p
 </head>
 <body>
 
-<header>
-<h1>EK Effektiv Kundeservice</h1>
-<p>Vi hjælper medarbejdere med at forstå deres lønsedler, sikre korrekt løn, feriepenge og feriedage. Vi gør det nemt og hurtigt for alle i mad- og servicebranchen.</p>
-<button onclick="window.location.href='medlem.html'">Bliv medlem</button>
-<button onclick="window.location.href='hjaelp.html'">Få hjælp</button>
-<button onclick="window.location.href='send-loenseddel.html'">Send lønseddel</button>
+<header class="hero">
+  <div class="hero-text">
+    <h1>EK Effektiv Kundeservice</h1>
+    <p>Vi hjælper medarbejdere i mad- og servicebranchen med at sikre korrekt løn og feriepenge.</p>
+
+    <a href="medlem.html" class="btn">Bliv medlem</a>
+    <a href="hjaelp.html" class="btn">Få hjælp</a>
+    <a href="send-loenseddel.html" class="btn">Send lønseddel</a>
+  </div>
 </header>
+
+<style>
+
+.hero{
+  height:420px;
+  background-image:url("https://images.unsplash.com/photo-1556911220-e15b29be8c8f");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  backdrop-filter:blur(3px);
+  background:rgba(0,0,0,0.3);
+}
+
+.hero-text{
+  position:relative;
+  color:white;
+  text-align:center;
+  max-width:700px;
+}
+
+.hero-text h1{
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+.hero-text p{
+  font-size:18px;
+  margin-bottom:25px;
+}
+
+.btn{
+  display:inline-block;
+  background:#ff9900;
+  color:white;
+  padding:12px 22px;
+  margin:5px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+</style>
 
 <nav>
 <a href="#om">Om EK</a>
