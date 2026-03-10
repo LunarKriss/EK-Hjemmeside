@@ -5,74 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EK Effektiv Kundeservice</title>
 <style>
-body {
-  font-family: Arial, sans-serif;
-  margin:0;
-  background:#f4f6f8;
-}
+body { font-family: Arial, sans-serif; margin:0; background:#f4f6f8; }
 header {
-  background:#0b3d91;
+  background: url('https://images.unsplash.com/photo-1580894908361-1967e340ca2a?fit=crop&w=1500&q=80') no-repeat center center/cover;
   color:white;
   text-align:center;
-  padding:50px 20px;
-}
-header h1 {
-  font-size:36px;
-  margin-bottom:10px;
-}
-header p {
-  font-size:16px;
-  margin-bottom:20px;
-}
-button {
-  background:#ff9900;
-  color:white;
-  border:none;
-  padding:12px 20px;
-  border-radius:8px;
-  cursor:pointer;
-  margin:5px;
-}
-nav {
-  background:#082c6c;
-  padding:10px;
-  text-align:center;
-}
-nav a {
-  color:white;
-  text-decoration:none;
-  margin:0 10px;
-  font-weight:bold;
-}
-section {
-  max-width:900px;
-  margin:auto;
-  padding:40px 20px;
-}
-.box {
-  background:white;
-  padding:20px;
-  border-radius:10px;
-  box-shadow:0 2px 6px rgba(0,0,0,0.1);
-  margin-bottom:20px;
-}
-.trustpilot {
-  text-align:center;
-  margin-top:40px;
-  margin-bottom:10px;
-}
-.trustpilot span {
-  font-size:28px;
-  color:#ffcc00;
-  margin:0 2px;
-}
-footer {
-  background:#0b3d91;
-  color:white;
-  text-align:center;
-  padding:15px;
+  padding:100px 20px;
   position: relative;
 }
+header::after {
+  content:'';
+  position:absolute;
+  top:0; left:0; width:100%; height:100%;
+  background: rgba(0,0,0,0.5);
+}
+header h1, header p, header button { position: relative; z-index:1; }
+header h1 { font-size:40px; margin-bottom:10px; }
+header p { font-size:18px; margin-bottom:20px; }
+button { background:#ff9900; color:white; border:none; padding:12px 20px; border-radius:8px; cursor:pointer; margin:5px; font-size:16px; }
+nav { background:#082c6c; padding:10px; text-align:center; }
+nav a { color:white; text-decoration:none; margin:0 10px; font-weight:bold; }
+section { max-width:900px; margin:auto; padding:40px 20px; }
+.box { background:white; padding:20px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1); margin-bottom:20px; }
+.trustpilot { text-align:center; margin-top:40px; margin-bottom:20px; font-size:20px; color:#ffcc00; }
+footer { background:#0b3d91; color:white; text-align:center; padding:15px; }
 </style>
 </head>
 <body>
@@ -124,18 +80,4 @@ footer {
 <h2>Kontakt os</h2>
 <p>Email: ekdk5823@gmail.com</p>
 <p>Telefon: 27 32 43 54</p>
-<p>Hjemmeside: github.io/Ek-hjemmeside</p>
-</section>
-
-<!-- Trustpilot stjerner nederst -->
-<div class="trustpilot">
-<span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
-<p>4 ud af 5 stjerner</p>
-</div>
-
-<footer>
-<p>© 2026 EK Effektiv Kundeservice</p>
-</footer>
-
-</body>
 </html>
