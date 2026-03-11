@@ -4,23 +4,122 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Få hjælp - EK</title>
+
 <style>
-body {font-family:Arial,sans-serif; margin:0; background:#f4f6f8; padding:40px;}
-h1{color:#0b3d91;}
-ul{line-height:1.6; margin-left:20px;}
-button{padding:14px 24px;border:none;border-radius:8px;background:#ff9900;color:white;cursor:pointer;font-size:16px;margin-top:10px;}
+
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#f4f6f8;
+padding:40px;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+display:flex;
+gap:40px;
+align-items:center;
+}
+
+.text{
+flex:1;
+}
+
+.image{
+flex:1;
+}
+
+.image img{
+width:100%;
+border-radius:10px;
+}
+
+h1{
+color:#0b3d91;
+}
+
+ul{
+line-height:1.6;
+}
+
+button{
+background:#ff9900;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+margin-top:15px;
+}
+
+.back{
+background:#0b3d91;
+margin-top:20px;
+}
+
 </style>
+
 </head>
+
 <body>
-<h1>Få hjælp hos EK</h1>
-<p>Vi tilbyder personlig og effektiv hjælp til medarbejdere, der har spørgsmål om lønsedler, feriepenge og rettigheder på arbejdspladsen. Vi guider dig trin for trin.</p>
+
+<div class="container">
+
+<div class="text">
+
+<h1>Få hjælp til din løn</h1>
+
+<p>
+Hos EK hjælper vi medarbejdere i mad- og servicebranchen med at sikre,
+at de får den løn og de rettigheder de har krav på.
+</p>
+
+<p>
+Mange oplever at deres lønseddel kan være svær at forstå.
+Derfor hjælper vi med at gennemgå den og forklare hvad tallene betyder.
+</p>
+
+<h2>Vi kan hjælpe med</h2>
+
 <ul>
-<li>Direkte rådgivning via mail og telefon</li>
-<li>Hjælp med at forstå din lønseddel</li>
-<li>Vejledning om rettigheder og feriedage</li>
-<li>Support til alle medarbejdere i mad- og servicebranchen</li>
-<li>Råd om hvordan man håndterer fejl eller mangler</li>
+<li>Tjek af lønsedler</li>
+<li>Tjek af feriepenge</li>
+<li>Tjek af feriedage</li>
+<li>Hjælp hvis du mangler løn</li>
+<li>Forklaring af din lønseddel</li>
 </ul>
-<button onclick="window.location.href='index.html'">Tilbage til forsiden</button>
+
+<p>
+Hvis du er i tvivl om noget, kan du sende din lønseddel til os,
+så gennemgår vi den og giver dig et klart svar.
+</p>
+
+<button onclick="window.location.href='send-loenseddel.html'">
+Send lønseddel
+</button>
+
+<br>
+
+<button class="back" onclick="window.location.href='index.html'">
+Tilbage til forsiden
+</button>
+
+</div>
+
+
+<div class="image">
+
+<img src="https://images.unsplash.com/photo-1556911220-bff31c812dba" alt="kokke arbejder i køkken">
+
+</div>
+
+</div>
+
 </body>
 </html>
